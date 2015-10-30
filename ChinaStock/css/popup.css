@@ -1,0 +1,17 @@
+#searchResult {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid black;
+}
+#searchResult div {
+    border-bottom: 1px solid gray;
+}
+#searchResult div:last-child {
+    border-bottom: none;
+}

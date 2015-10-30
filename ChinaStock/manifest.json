@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "ChinaStock",
+  "version": "1.0",
+
+  "description": "中国股票",
+
+  "browser_action": {
+	"default_icon": "images/icon.png",
+	"default_title": "ChinaStock",
+	"default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "http://*/*"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+</head>
+<body>
+<div id="stock_table_wrapper" class="dataTables_wrapper no-footer">
+    <div id="stock_table_filter" class="dataTables_filter">
+        <label>
+            搜索：<input type="search" class="" placeholder="" aria-controls="stock_table">
+            <div id="searchResult"></div>
+        </label>
+    </div>
+    <table id="stock_table" class="display dataTable no-footer" cellspacing="0" role="grid"
+           style="width: 400px;">
+        <thead>
+        <tr role="row">
+            <th class="sorting_disabled" rowspan="1" colspan="1">代码</th>
+            <th class="sorting_disabled" rowspan="1" colspan="1">名称</th>
+            <th class="sorting_disabled" rowspan="1" colspan="1">当前价</th>
+            <th class="sorting_disabled" rowspan="1" colspan="1">涨跌幅</th>
+            <th class="sorting_disabled" rowspan="1" colspan="1">时间</th>
+            <th class="sorting_disabled" rowspan="1" colspan="1"></th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+</body>
+</html>
+
